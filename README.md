@@ -31,8 +31,8 @@ A short visual walkthrough demonstrating:
 - Governance enforcement constraints
 - Audit logging & analytics filtering
 
-## 🎥 Few-Minutes System Walkthrough
-[![Watch the demo](https://img.shields.io/badge/Watch-2--Minute%20Demo-blue?style=for-the-badge)](https://www.loom.com/share/b73fad63cb0e4e50b0858dc3a60c1248)
+## 🎥 System Walkthrough
+[![Watch the demo](https://img.shields.io/badge/Watch-5--Minute%20Demo-blue?style=for-the-badge)](https://www.loom.com/share/b73fad63cb0e4e50b0858dc3a60c1248)
 
 ---
 
