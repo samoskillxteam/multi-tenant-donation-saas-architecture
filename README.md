@@ -21,7 +21,7 @@ Rather than optimizing purely for feature velocity, the architecture prioritizes
 
 ---
 
-## 🎥 System Walkthrough (2-Minute Silent Demo)
+## System Walkthrough 
 
 A short visual walkthrough demonstrating:
 
@@ -31,12 +31,11 @@ A short visual walkthrough demonstrating:
 - Governance enforcement constraints
 - Audit logging & analytics filtering
 
-## 🎥 System Walkthrough
 [![Watch the demo](https://img.shields.io/badge/Watch-5--Minute%20Demo-blue?style=for-the-badge)](https://www.loom.com/share/b73fad63cb0e4e50b0858dc3a60c1248)
 
 ---
 
-# 1️⃣ System Context & Design Constraints
+# System Context & Design Constraints
 
 ### Operating Constraints
 
@@ -58,7 +57,7 @@ A short visual walkthrough demonstrating:
 
 ---
 
-# 2️⃣ Multi-Tenancy Strategy
+# Multi-Tenancy Strategy
 
 ### Approach: Scoped Relational Tenancy (Single Database)
 
@@ -82,7 +81,7 @@ The selected model supports centralized reporting while preserving strict access
 
 ---
 
-# 3️⃣ Hierarchical RBAC Enforcement
+# Hierarchical RBAC Enforcement
 
 The platform enforces structured governance across multiple levels:
 
@@ -105,7 +104,7 @@ Governance constraints are enforced at the **data layer**, preventing UI bypass 
 
 ---
 
-# 4️⃣ Financial Engine & Multi-Currency Normalization
+# Financial Engine & Multi-Currency Normalization
 
 ## Core Design Goal
 
@@ -143,7 +142,7 @@ Approval workflow prevents:
 
 ---
 
-# 5️⃣ Offline Sync API (Distributed Ingestion)
+# Offline Sync API (Distributed Ingestion)
 
 Designed for environments with intermittent connectivity.
 
@@ -165,7 +164,7 @@ This ensures data reliability while supporting distributed submission channels.
 
 ---
 
-# 6️⃣ Audit Logging & Compliance
+# Audit Logging & Compliance
 
 A centralized AuditLogger service tracks:
 
@@ -186,7 +185,7 @@ Designed to support compliance, internal audits, and governance transparency.
 
 ---
 
-# 7️⃣ Notification & Communication Pipeline
+# Notification & Communication Pipeline
 
 Multi-channel abstraction layer supporting:
 
@@ -204,7 +203,7 @@ Why Queue Notifications?
 
 ---
 
-# 8️⃣ Analytics & Reporting Engine
+# Analytics & Reporting Engine
 
 Built to provide operational insight across multiple entities.
 
@@ -234,7 +233,7 @@ Supports real-time filtering using Livewire + Chart.js.
 
 ---
 
-# 9️⃣ Security Design
+# Security Design
 
 * Multi-guard authentication separation
 * Role-scoped policy enforcement
@@ -247,7 +246,7 @@ Sensitive operations require contextual role validation at model level.
 
 ---
 
-# 🔟 Tradeoffs & Rejected Approaches
+# Tradeoffs & Rejected Approaches
 
 ### Microservices
 
@@ -271,7 +270,7 @@ Deferred in favor of queued notifications to prioritize reliability over immedia
 
 ---
 
-# 11️⃣ Scalability Strategy
+# Scalability Strategy
 
 Designed to support:
 
@@ -285,7 +284,7 @@ Database optimized with strict FK constraints and indexed aggregation fields.
 
 ---
 
-# 12️⃣ Engineering Principles Applied
+#Engineering Principles Applied
 
 * Governance-first architecture
 * Financial data immutability principles
