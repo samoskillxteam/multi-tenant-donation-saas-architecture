@@ -81,6 +81,27 @@ The selected model supports centralized reporting while preserving strict access
 
 ---
 
+## Domain Entity Relationship Diagram (Governance & Financial Core)
+
+The following ERD represents the core domain model underpinning the system’s
+multi-tenant governance and financial workflows.
+
+It illustrates how organizational hierarchy, scoped administration,
+transaction processing, and compliance logging are structurally enforced
+at the database layer.
+
+![Domain ERD](./diagrams/domain-erd.png)
+
+## Architectural Highlights
+
+- **Strict tenant isolation** enforced via `church_id` scoping across all transactional entities
+- **Hierarchical governance model** supporting group-level and church-level administration
+- **Purpose-level administrative control** implemented through a scoped pivot (`manager_purpose`)
+- **Dual-currency storage strategy** preserving historical financial accuracy
+- **Polymorphic audit logging** enabling cross-entity compliance traceability
+
+---
+
 # Hierarchical RBAC Enforcement
 
 The platform enforces structured governance across multiple levels:
